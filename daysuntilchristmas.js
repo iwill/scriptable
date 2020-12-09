@@ -43,7 +43,7 @@ class ChristmasWidget
         // check if we need to use christmas next year
         if (
             today.getMonth() > christmas.getMonth()
-            || (today.getMonth() === christmas.getMonth() && today.getDay() > christmas.getDay())
+            || (today.getMonth() === christmas.getMonth() && today.getDate() > christmas.getDate())
         ) {
             let nextYear = christmas.getFullYear();
             nextYear = nextYear + 1;
