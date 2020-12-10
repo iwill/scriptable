@@ -54,19 +54,17 @@ class ChristmasWidget {
         christmas = christmas.getTime();
         today = today.getTime();
         
-        let convertInDays = 24*3600*1000;
-        return parseInt((christmas - today)/convertInDays);
+        let convertInDays = 24 * 3600 * 1000;
+        return parseInt((christmas - today) / convertInDays);
     }
     
     decideDisplayColor(daysLeft) {
         if (daysLeft >= 50) {
             return Color.red();
         }
-        
         if (daysLeft >= 30) {
             return Color.yellow();
         }
-        
         return Color.purple();
     }
 }
