@@ -12,6 +12,7 @@ class ChristmasWidget {
         let list = new ListWidget();
         list.setPadding(12, 12, 12, 12);
         
+        // 👩🏻|12-29|Her Birthday|🌷🎁🎂♥️
         let params = (args.widgetParameter || "").split("|");
         let icon = params[0] || "🎅🏻";
         let date = (params[1] || "12-25").split("-");
