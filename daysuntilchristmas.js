@@ -9,15 +9,15 @@ class ChristmasWidget {
     }
     
     deployWidget() {
-        let list = new ListWidget();
-        list.setPadding(12, 12, 12, 12);
-        
         // 👩🏻|12-29|Her Birthday|🌷🎁🎂♥️
         let params = (args.widgetParameter || "").split("|");
         let icon = params[0] || "🎅🏻";
         let date = (params[1] || "12-25").split("-");
         let event = params[2] || params[1] || "Christmas";
         let emoji = params[3] || "🎄🎄🎄🎄";
+        
+        let list = new ListWidget();
+        list.setPadding(12, 12, 12, 12);
         
         let titleTxt = list.addText(icon + " Countdown\nUntil " + event);
         titleTxt.font = Font.mediumSystemFont(13);
